@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .form-group label {
+            text-align: right;
+            width: 120px;
+            flex-shrink: 0;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 200px;
+            padding: 2px;
+        }
+
+        .role-section {
+            margin: 15px 0;
+        }
+
+        .role-section label {
+            text-align: right;
+            width: 120px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .role-options {
+            display: inline-block;
+        }
+
+        .role-options div {
+            margin-bottom: 5px;
+        }
+
+        .services-section {
+            margin: 15px 0;
+        }
+
+        .services-section label {
+            text-align: right;
+            width: 120px;
+            display: inline-block;
+        }
+
+        .services-options {
+            display: inline-block;
+        }
+
+        .services-options div {
+            margin-bottom: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            text-align: left;
+            margin-left: 125px;
+        }
+
+        .buttons input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Novell Services Login</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City of Employment:</label>
+                <input type="text" id="city" name="city">
+            </div>
+
+            <div class="form-group">
+                <label for="server">Web server:</label>
+                <select id="server" name="server">
+                    <option value="">-- Choose a server --</option>
+                    <option value="server1">Server 1</option>
+                    <option value="server2">Server 2</option>
+                </select>
+            </div>
+
+            <div class="role-section">
+                <label>Please specify your role:</label>
+                <div class="role-options">
+                    <div>
+                        <input type="radio" id="admin" name="role" value="admin">
+                        <label for="admin">Admin</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="engineer" name="role" value="engineer">
+                        <label for="engineer">Engineer</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="manager" name="role" value="manager">
+                        <label for="manager">Manager</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="guest" name="role" value="guest">
+                        <label for="guest">Guest</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <label>Single Sign-on to the following:</label>
+                <div class="services-options">
+                    <div>
+                        <input type="checkbox" id="mail" name="services" value="mail">
+                        <label for="mail">Mail</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="payroll" name="services" value="payroll">
+                        <label for="payroll">Payroll</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="self-service" name="services" value="self-service">
+                        <label for="self-service">Self-service</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
