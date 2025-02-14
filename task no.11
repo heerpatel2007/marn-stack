@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f2f2f2;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-color: #808080;
+}
+
+.box2 {
+  background-color: #ffff00;
+}
+
+.box3 {
+  background-color: #ff0000;
+}
+
+.box4 {
+  background-color: #008000;
+}
+
+.box5 {
+  background-color: #0000ff;
+}
+
+.box6 {
+  background-color: #00ff00;
+}
+
+.box7 {
+  background-color: #00ffff;
+}
+
+.box8 {
+  background-color: #ff00ff;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Playing Around With The CSS Box Model</h1>
+
+<div class="box box1">Box 1</div>
+<div class="box box2">Box 2</div>
+<div class="box box3">Box 3</div>
+<div class="box box4">Box 4</div>
+<div class="box box5">Box 5</div>
+<div class="box box6">Box 6</div>
+<div class="box box7">Box 7</div>
+<div class="box box8">Box 8</div>
+
+</body>
+</html>
