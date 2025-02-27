@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Numbered Lists</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+}
+
+.container {
+display: flex;
+gap: 50px;
+}
+
+.list {
+list-style: none;
+padding-left: 40px;
+position: relative;
+width: 220px;
+}
+
+.list-item {
+background: lightgray;
+padding: 8px 10px;
+margin: 8px 0;
+border-radius: 5px;
+position: relative;
+}
+
+
+.blue-list .list-item::before {
+content: attr(data-number);
+position: absolute;
+left: -40px;
+top: 50%;
+transform: translateY(-50%);
+background: #3498db;
+color: white;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+}
+
+
+.red-list .list-item::before {
+content: attr(data-number);
+position: absolute;
+left: -40px;
+top: 50%;
+transform: translateY(-50%);
+background: #e74c3c;
+color: white;
+width: 30px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<ul class="list blue-list">
+<li class="list-item" data-number="1">List item</li>
+<li class="list-item" data-number="2">List item</li>
+<li class="list-item" data-number="3">List item</li>
+<li class="list-item" data-number="1">List sub item</li>
+</ul>
+
+<ul class="list red-list">
+<li class="list-item" data-number="1">List item</li>
+<li class="list-item" data-number="2">List item</li>
+<li class="list-item" data-number="3">List item</li>
+<li class="list-item" data-number="1">List sub item</li>
+</ul>
+</div>
+
+</body>
+</html>
